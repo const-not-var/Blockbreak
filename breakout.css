@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    background-size: cover;
+}
+
+#board {
+    background-color: black;
+    border-top: 5px solid lightseagreen;
+    border-left: 5px solid lightseagreen;
+    border-right: 5px solid lightseagreen;
+
+}
+
+h1 {
+    color: rgb(169, 204, 235);
+    border: 10px;
+    margin: 20px;
+    padding: 20px;
+}
