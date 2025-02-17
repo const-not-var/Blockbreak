@@ -59,7 +59,7 @@ window.onload = function() {
     context = board.getContext("2d"); // used for drawing on the board
 
     //draw initial player
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "purple";
     context.fillRect(player.x, player.y, player.width, player.height);
 
     requestAnimationFrame(update);
@@ -77,7 +77,7 @@ function update() {
     context.clearRect(0, 0, board.width, board.height);
 
     //player
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "rgb(190, 58, 251)";
     context.fillRect(player.x, player.y, player.width, player.height);
 
     context.fillStyle = "white";
@@ -143,6 +143,8 @@ function update() {
         score =+ 100*blockRows*blockColumns; // bonus points
         blockRows = Math.min(blockRows + 1, blockMaxRows);
         level = Math.min(level + 1, maxLevel);
+        // ball.velocityX *= -1.06;
+        // ball.velocityY *= -1.04;
         createBlocks();
     }
 
